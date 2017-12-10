@@ -29,3 +29,4 @@ python ~/facenet/src/classifier.py CLASSIFY ~/datasets/$dir/aligned ~/facenet/qu
 
 #to do: optimize face detection, scrounge a resistor and capacitor for a low-pass filter on this junk PIR motion detector
 #      -edit confidence thresholds on mtcnn
+#      -utilize output of classifier to draw name + confidence on bounding boxes, combine multiple boxes in single picture if multiple faces
