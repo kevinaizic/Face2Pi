@@ -5,7 +5,7 @@ Future goals include taking more advantage of facenet's ability to compare faces
 
 Currently a work in progress, take inspiration at your own risk.
 
-# Software
+# Base Software
 - Raspbian stretch lite 2017-11-29             
   * Python 3.6                
 - Ubuntu 16.04 LTS                  
