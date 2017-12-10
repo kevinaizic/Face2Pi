@@ -21,7 +21,7 @@ if ls -1qA ~/datasets/$dir/aligned/img/ | grep -q .; then ! echo ~~found face/s~
 #delete new img dir and exit if it's empty
 
 #if face(s) detected, run classifier and save output
-#############change pkl once trained
+#############change pkl once trained on all roommates
 python ~/facenet/src/classifier.py CLASSIFY ~/datasets/$dir/aligned ~/facenet/quant/quantized_110547.pb ~/datasets/pi/localsplit.pkl --batch_size 1000 > ~/datasets/$dir/classified.txt
 
 #draw bounding boxes
