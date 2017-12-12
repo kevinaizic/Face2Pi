@@ -26,3 +26,4 @@ if ls -1qA ~/datasets/$dir/cluster | grep -q .; then ! echo ~~found face/s: ~/da
 
 #draw bounding boxes
 python ~/cam/script/cheese_cluster.py $dir 
+python ~/cam/script/emailpic.py $dir
