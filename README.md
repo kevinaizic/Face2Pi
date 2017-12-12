@@ -10,13 +10,14 @@ I also plan to incorporate a better motion detector so my Pi is less inundated w
 Currently a work in progress, take inspiration at your own risk.
 
 # Base Software
-- Raspbian stretch lite 2017-11-29             
+- (Raspberry Pi 3) Raspbian stretch lite 2017-11-29             
   * Bazel 0.4.5
   * Python 2.7              
   * mosquitto 1.4.10
   * jpegoptim
   * opencv
-- Ubuntu 16.04 LTS                  
+- (Workstation) Ubuntu 16.04 LTS                  
   * Python 3.6                   
   * Arduino IDE 1.8.5
-- Tensorflow 1.4.0 (w/ CUDA on workstation), dependencies                   
+- (Both) Tensorflow 1.4.0 (w/ CUDA support on workstation)
+  * dependencies                   
