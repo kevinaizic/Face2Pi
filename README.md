@@ -5,7 +5,7 @@ Currently there are two ways to use this, one involving pre-training and classif
 
 Future goals include taking more advantage of facenet providing functionality that logs to a database *when* faces--whether known or not--are seen, as well as consolidating classifier and cluster methods.
 
-I also plan to incorporate a better motion detector so my Pi is less inundated with frivolous disk access and memory consumption when detecting faces (though its current working status is a testament to its potential performance).
+I also plan to incorporate a better motion detector so my Pi is less inundated with frivolous disk access and memory consumption when detecting faces (though its current working status is a testament to its performance potential).
 
 Currently a work in progress, take inspiration at your own risk.
 
