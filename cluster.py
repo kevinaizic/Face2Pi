@@ -141,9 +141,9 @@ def align_data(image_list, image_size, margin, pnet, rnet, onet, name_list):
         bounding_boxes, _ = align.detect_face.detect_face(image_list[x], minsize, pnet, rnet, onet, threshold, factor)
         nrof_samples = len(bounding_boxes)
         if nrof_samples > 0:
-            out_names.append(name_list[x])
             for i in xrange(nrof_samples):
                 if bounding_boxes[i][4] > 0.95:
+                    out_names.append(name_list[x])
                     det = np.squeeze(bounding_boxes[i, 0:4])
                     bb = np.zeros(4, dtype=np.int32)
                     bb[0] = np.maximum(det[0] - margin / 2, 0)
