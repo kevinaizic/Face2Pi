@@ -156,9 +156,6 @@ def align_data(image_list, image_size, margin, pnet, rnet, onet, name_list):
                     img_list.append(prewhitened)
                     bb_list.append("-" + str(bb[0]) + "." + str(bb[1]) + "." + str(bb[2]) + "." + str(bb[3])) ###added to output bounding boxes
 
-    print(out_names)
-    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-    print(name_list)
     if len(img_list) > 0:
         images = np.stack(img_list)
         return [images, bb_list, out_names]
