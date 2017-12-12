@@ -118,13 +118,13 @@ def main(args):
 #                                misc.imsave(os.path.join(path, str(cnt) + '.png'), images[j])
 				#saving bounding boxes as part of output filename
 			        boxes = bbs[j]
-                                misc.imsave(os.path.join(path, out_names[j] + boxes + str(cnt) + ".jpg"), images[j]) ##added to make output same name (timestamp)
+                                misc.imsave(os.path.join(path, out_names[j] + boxes + "." + str(cnt) + ".jpg"), images[j]) ##added to make output same name (timestamp)
                                 cnt += 1
                         else:
                             for j in np.nonzero(labels == i)[0]:
 	                        boxes = bbs[j]
 #                                misc.imsave(os.path.join(path, str(cnt) + '.png'), images[j])
-                                misc.imsave(os.path.join(path, out_names[j] + boxes + str(cnt) + ".jpg"), images[j])
+                                misc.imsave(os.path.join(path, out_names[j] + boxes + "." + str(cnt) + ".jpg"), images[j])
                                 cnt += 1
 		    
 def align_data(image_list, image_size, margin, pnet, rnet, onet, name_list):
