@@ -22,7 +22,7 @@ with picamera.PiCamera() as camera:
         #I really didn't think I would miss c++
     while True: #frosted debug flakes
         i = 0
-        while i < 600: #10min       
+        while i < 300: #5min       
 	    #too inaccurate, for now just take ~1 pic every second
 	    #PIR = subprocess.check_output("mosquitto_sub -t outTopic -C 1", shell=True)
             #if "SHIT" in str(PIR): #trigger burst of 10 pics on movement (false positives expected)           
@@ -36,4 +36,3 @@ with picamera.PiCamera() as camera:
 	time.sleep(1) #avoid incomplete image writes
 	#run face2pi in background while continuing to fill ring buffer
 	subprocess.Popen("/home/pi/cam/script/face2pi_cluster.sh", shell=True)
-#keep script running somehow...
