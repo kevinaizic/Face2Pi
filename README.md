@@ -11,7 +11,7 @@ Currently a work in progress, take inspiration at your own risk.
 
 # Base Software
 - (Raspberry Pi 3) Raspbian stretch lite 2017-11-29             
-  * Bazel 0.4.5, used to compile TF with some ARM optimization
+  * Bazel 0.4.5, used to compile TF with some ARM optimization and reduce pre-trained model graph size
   * Python 2.7              
   * mosquitto 1.4.10
   * jpegoptim
